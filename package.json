@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "A lightweight lodash alternative",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
@@ -50,10 +49,22 @@
     "testEnvironment": "node",
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
-    }
+    },
+    "extensionsToTreatAsEsm": [".ts"],
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "transformIgnorePatterns": [],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/",
+      "/test-minchuan-lodash/"
+    ]
   },
   "files": [
-    "dist"
+    "dist",
+    "!**/__tests__",
+    "!**/*.test.*"
   ],
   "dependencies": {
     "tslib": "^2.8.1"
