@@ -1,0 +1,61 @@
+{
+  "type": "module",
+  "name": "minchuan-lodash",
+  "version": "1.0.0",
+  "description": "A lightweight lodash alternative",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest", 
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "utility",
+    "lodash",
+    "functional"
+  ],
+  "author": "minchuan",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "husky": "^9.1.7",
+    "jest": "^27.3.1",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "rollup": "^2.58.0",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4",
+    "typescript-eslint": "^8.28.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "tslib": "^2.8.1"
+  }
+}

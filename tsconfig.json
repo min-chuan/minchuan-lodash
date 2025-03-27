@@ -1,0 +1,33 @@
+{
+  // TypeScript编译器配置
+  "compilerOptions": {
+    // 编译目标ES版本
+    "target": "es5", // es3/es5/es6/es2015/esnext等
+    // 模块系统类型
+    "module": "esnext", // commonjs/amd/esnext等
+    // 生成.d.ts声明文件
+    "declaration": true,
+    // 生成声明文件的sourcemap
+    "declarationMap": true,
+    // 生成JS的sourcemap文件
+    "sourceMap": true,
+    // 启用所有严格类型检查
+    "strict": true,
+    // 模块解析策略
+    "moduleResolution": "node", // node/classic
+    // 支持CommonJS和ES模块互操作
+    "esModuleInterop": true,
+    // 跳过库类型检查
+    "skipLibCheck": true,
+    // 强制文件名大小写一致
+    "forceConsistentCasingInFileNames": true,
+    // 输出目录
+    "outDir": "dist",
+    // 源代码根目录
+    "rootDir": "src"
+  },
+  // 包含的文件模式
+  "include": ["src/**/*"],
+  // 排除的文件模式
+  "exclude": ["node_modules"]
+}
