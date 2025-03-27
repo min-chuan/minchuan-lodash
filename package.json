@@ -1,13 +1,13 @@
 {
   "type": "module",
   "name": "minchuan-lodash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight lodash alternative",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest", 
+    "test": "jest",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write \"**/*.{ts,js,json,md}\"",
     "prepare": "husky install",
@@ -50,7 +50,9 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
-    "extensionsToTreatAsEsm": [".ts"],
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
     "moduleNameMapper": {
       "^(\\.{1,2}/.*)\\.js$": "$1"
     },
