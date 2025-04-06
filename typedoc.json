@@ -1,0 +1,23 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "./src/array/index.ts",
+    "./src/function/index.ts",
+    "./src/lang/index.ts",
+    "./src/object/index.ts"
+  ],
+  "out": "docs/api",
+  "theme": "markdown",
+  "includeVersion": true,
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "hideGenerator": false,
+  "cname": "minchuan-lodash-docs",
+  "githubPages": false,
+  "plugin": ["typedoc-plugin-markdown"],
+  "categorizeByGroup": true,
+  "defaultCategory": "Core",
+  "groupOrder": ["Modules", "Functions"],
+  "sort": ["source-order"],
+  "name": "minchuan-lodash"
+}
