@@ -2,7 +2,7 @@ name: 打包项目文档
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 permissions:
   contents: write
