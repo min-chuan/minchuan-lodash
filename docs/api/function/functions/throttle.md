@@ -8,7 +8,7 @@
 
 > **throttle**\<`T`\>(`func`, `limit`): (...`args`) => `void`
 
-Defined in: [function/index.ts:32](https://github.com/min-chuan/minchuan-lodash/blob/98394d041c9ab9a54b4fe6833652c86e69f124e2/src/function/index.ts#L32)
+Defined in: [function/index.ts:32](https://github.com/min-chuan/minchuan-lodash/blob/533b720297b85c3df23fa5b0d07b7dcb6c96c518/src/function/index.ts#L32)
 
 创建一个节流函数，在限流时间内只执行一次调用
 

@@ -8,7 +8,7 @@
 
 > **concat**\<`T`\>(...`arrays`): `T`[]
 
-Defined in: [array/index.ts:38](https://github.com/min-chuan/minchuan-lodash/blob/98394d041c9ab9a54b4fe6833652c86e69f124e2/src/array/index.ts#L38)
+Defined in: [array/index.ts:38](https://github.com/min-chuan/minchuan-lodash/blob/533b720297b85c3df23fa5b0d07b7dcb6c96c518/src/array/index.ts#L38)
 
 合并多个数组或值到一个新数组
 

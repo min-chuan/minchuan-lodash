@@ -8,7 +8,7 @@
 
 > **pick**\<`T`, `K`\>(`obj`, `keys`): `Pick`\<`T`, `K`\>
 
-Defined in: [object/index.ts:38](https://github.com/min-chuan/minchuan-lodash/blob/98394d041c9ab9a54b4fe6833652c86e69f124e2/src/object/index.ts#L38)
+Defined in: [object/index.ts:39](https://github.com/min-chuan/minchuan-lodash/blob/533b720297b85c3df23fa5b0d07b7dcb6c96c518/src/object/index.ts#L39)
 
 从对象中挑选指定属性
 

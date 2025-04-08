@@ -8,7 +8,7 @@
 
 > **debounce**\<`T`\>(`func`, `wait`): (...`args`) => `void`
 
-Defined in: [function/index.ts:11](https://github.com/min-chuan/minchuan-lodash/blob/98394d041c9ab9a54b4fe6833652c86e69f124e2/src/function/index.ts#L11)
+Defined in: [function/index.ts:11](https://github.com/min-chuan/minchuan-lodash/blob/533b720297b85c3df23fa5b0d07b7dcb6c96c518/src/function/index.ts#L11)
 
 创建一个防抖函数，在等待时间内只执行最后一次调用
 

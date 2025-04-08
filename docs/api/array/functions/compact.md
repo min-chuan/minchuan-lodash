@@ -8,7 +8,7 @@
 
 > **compact**\<`T`\>(`array`): `T`[]
 
-Defined in: [array/index.ts:26](https://github.com/min-chuan/minchuan-lodash/blob/98394d041c9ab9a54b4fe6833652c86e69f124e2/src/array/index.ts#L26)
+Defined in: [array/index.ts:26](https://github.com/min-chuan/minchuan-lodash/blob/533b720297b85c3df23fa5b0d07b7dcb6c96c518/src/array/index.ts#L26)
 
 过滤数组中的假值(null, undefined, false, 0, "")
 

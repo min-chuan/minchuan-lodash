@@ -8,7 +8,7 @@
 
 > **isNil**(`value`): value is undefined \| null
 
-Defined in: [lang/index.ts:10](https://github.com/min-chuan/minchuan-lodash/blob/98394d041c9ab9a54b4fe6833652c86e69f124e2/src/lang/index.ts#L10)
+Defined in: [lang/index.ts:10](https://github.com/min-chuan/minchuan-lodash/blob/533b720297b85c3df23fa5b0d07b7dcb6c96c518/src/lang/index.ts#L10)
 
 检查值是否为null或undefined
 
