@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/minchuan-lodash/',
   title: 'minchuan-lodash',
   description: 'A lightweight lodash alternative',
   themeConfig: {
