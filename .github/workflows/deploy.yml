@@ -1,28 +1,30 @@
-name: Deploy Docs to GitHub Pages
+name: 打包项目文档
 
 on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
+    name: 发布工作
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+      - name: 读取仓库内容
+        uses: actions/checkout@v4
           
-      - name: Install dependencies
-        run: cd docs && npm install
+      - name: 安装依赖和项目文档打包
+        run: |
+          npm install
+          npm run docs
+          cd docs && npm install
+          cd docs && npm run build
         
-      - name: Build docs
-        run: cd docs && npm run build
-        
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 部署到 GitHub Pages
+        uses: JamesIves/github-pages-deploy-actions@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+          branch: gh-pages
+          folder: docs/.vitepress/dist
