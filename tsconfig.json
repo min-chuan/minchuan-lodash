@@ -27,7 +27,7 @@
     "rootDir": "src"
   },
   // 包含的文件模式
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "test.js"],
   // 排除的文件模式
   "exclude": ["node_modules"]
 }
